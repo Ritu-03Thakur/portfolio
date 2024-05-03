@@ -11,7 +11,7 @@ const HomeSummary = () => {
   small businesses to scale.`;
   return (
     <>
-       <div className="p-2 flex flex-col justify-center items-center">
+       <div className="p-2 flex flex-col justify-center items-center" >
         <MyHeading text="Hello ! I'm "/>
         <MyHeading text="RITU "/>
        <TextGenerateEffect
@@ -30,7 +30,7 @@ const AboutSummary = () => {
   I'm intrested in design, writing, teaching, tech, and how small technical parts works.`;
     return (
         
-        <div className="p-2 flex justify-center gap-3 flex-col md:flex-row">
+        <div className="p-2 flex justify-center items-center gap-3 flex-col md:flex-row " id="about">
             <div>
                 <Image 
                  src={"/about.jpeg"}

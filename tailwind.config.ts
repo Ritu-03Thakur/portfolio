@@ -1,9 +1,9 @@
+/** @type {import('tailwindcss').Config} */ 
 const defaultTheme = require("tailwindcss/defaultTheme");
 const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
-/** @type {import('tailwindcss').Config} */ 
 
 import type { Config } from "tailwindcss";
 
@@ -16,7 +16,10 @@ const config: Config = {
   theme: {
     extend: {
       colors :{
-         primary : "#05212" , 
+         'primary' : "#10252f" , 
+         'chover' : '#73daeb' , 
+         'textpara' : '#9b9b9b'
+          
       } , 
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
