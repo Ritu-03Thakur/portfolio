@@ -18,7 +18,9 @@ const config: Config = {
       colors :{
          'primary' : "#10252f" , 
          'chover' : '#73daeb' , 
-         'textpara' : '#9b9b9b'
+         'textpara' : '#9b9b9b' , 
+         'lightmode' : '#7c8487' , 
+         'darkmode' : '#13181e' , 
           
       } , 
       backgroundImage: {

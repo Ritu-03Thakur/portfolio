@@ -2,9 +2,23 @@
 import Image from "next/image";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Button, MyHeading } from "../commons/Common";
-
+import Typewriter from "typewriter-effect";
 
 const HomeSummary = () => {
+
+  const options = {
+    strings: [
+      "    ",
+      "Full-Stack Developer",
+      "JAVA Programmer",
+      "React Specialist",
+      "Next.js Developer",
+      "Web Developer",
+     
+    ],
+    autoStart: true,
+    loop: true,
+  };
 
   const words = `I'm focused on building responsive
  web apps for creatives and
@@ -14,6 +28,9 @@ const HomeSummary = () => {
        <div className="p-2 flex flex-col justify-center items-center" >
         <MyHeading text="Hello ! I'm "/>
         <MyHeading text="RITU "/>
+        <p className="text-white text-sm">
+        <Typewriter options={options} />
+        </p>
        <TextGenerateEffect
         words={words}
          />
