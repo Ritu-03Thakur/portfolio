@@ -28,8 +28,8 @@ const HomeSummary = () => {
        <div className="p-2 flex flex-col justify-center items-center" >
         <MyHeading text="Hello ! I'm "/>
         <MyHeading text="RITU "/>
-        <p className="text-white text-sm">
-        <Typewriter options={options} />
+        <p className="text-white text-lg flex">
+       {"<"} <Typewriter options={options} /> {"/>"}
         </p>
        <TextGenerateEffect
         words={words}
