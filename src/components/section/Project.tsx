@@ -2,7 +2,7 @@
 import Link from "next/link";
 import Card from "../commons/Card";
 import { Button, MyHeading } from "../commons/Common";
-import {ProjectDesc} from "@/Data/data"
+import { ProjectDesc } from "@/Data/data";
 
 const ProjectSection = () => {
   return (

@@ -1,26 +1,24 @@
 "use client"
 import { useState } from "react";
 import { motion } from 'framer-motion';
-import { IoLogoGithub } from "react-icons/io5";
 import { MdOutlineSegment } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai"; 
 import Link from "next/link";
-import { FaLinkedin, FaSun } from "react-icons/fa";
-import { GiNightSleep } from "react-icons/gi";
+ import {  FaSun } from "react-icons/fa";
+ import { GiNightSleep } from "react-icons/gi";
 import Sidebar from "./Sidebar";
 import { SubHeading } from "./Common";
 
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
   const [isToggled, setIsToggled] = useState(false);
-  const [sidebar, setSidebar] = useState(false);
 
   const handleToggle = () => {
     setIsToggled(!isToggled);
   };
 
   const handleClick = () => setSideNav(!sideNav);
-  const handleSidebar = () => setSidebar(!sidebar);
+  const handleSidebar = () => setSideNav(!sideNav);
 
   return (
     <>
@@ -58,12 +56,12 @@ const Navbar = () => {
         <div className="flex gap-3">
           <div className="z-20 md:hidden cursor-pointer" onClick={handleClick}>
             {sideNav ? <AiOutlineClose className="w-6 h-6 text-white" /> : <MdOutlineSegment className="w-6 h-6 text-white" />}
-                {sideNav && <Sidebar  />}
           
         </div>
       </div>
       </div>
     </motion.nav>
+    {sideNav &&  <Sidebar show={sideNav} handleSidebar={handleSidebar} />}
     </>
   );
 };

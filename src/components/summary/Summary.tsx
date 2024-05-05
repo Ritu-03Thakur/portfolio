@@ -1,8 +1,10 @@
 "use client";
 import Image from "next/image";
+import {motion} from 'framer-motion'
 import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { Button, MyHeading } from "../commons/Common";
 import Typewriter from "typewriter-effect";
+import Link from "next/link";
 
 const HomeSummary = () => {
 
@@ -25,15 +27,21 @@ const HomeSummary = () => {
   small businesses to scale.`;
   return (
     <>
-       <div className="p-2 flex flex-col justify-center items-center" >
+       <div className="p-2 flex flex-col justify-center items-center gap-5" >
         <MyHeading text="Hello ! I'm "/>
         <MyHeading text="RITU "/>
         <div className=' text-2xl md:text-3xl flex font-bold  bg-gradient-to-r from-[#51bad2] to-[#4543d4] text-transparent bg-clip-text'>
        {"<"} <Typewriter options={options} /> {"/>"}
         </div>
-       <TextGenerateEffect
-        words={words}
-         />
+       <TextGenerateEffect words={words} />
+       <Link href={"https://www.linkedin.com/in/ritu03"}>
+       <motion.button
+       whileHover={{ scale: 1.1 }}
+       className="inline-flex h-16  w-[200px] text-xl animate-shimmer items-center justify-center rounded-md border border-[#18737d] bg-[linear-gradient(45deg,#151b21,45%,#497ec6,55%,#000000)] bg-[length:200%_100%]  font-medium text-[#9FB3CE] transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+       >
+        Let&apos;s Connect
+       </motion.button>
+       </Link>
        </div>
     </>
   )
@@ -62,7 +70,9 @@ const AboutSummary = () => {
          words={words}
          className="text-xl"
           />
+          <Link href={"RITU-Resume.pdf"}>
           <Button text = {"Download CV"} />
+          </Link>
             </div>
         </div>
     )
