@@ -8,7 +8,6 @@ export default function Home() {
      <>
       <TracingBeam className="px-6 ">
         <div className="flex flex-col gap-y-52 mt-[5rem]">
-        
      <HomeSummary />
      <AboutSummary/>
      <ProjectSection />

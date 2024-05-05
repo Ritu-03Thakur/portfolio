@@ -11,7 +11,7 @@ const HomeSummary = () => {
       "    ",
       "Full-Stack Developer",
       "JAVA Programmer",
-      "React Specialist",
+      "React Developer",
       "Next.js Developer",
       "Web Developer",
      
@@ -28,9 +28,9 @@ const HomeSummary = () => {
        <div className="p-2 flex flex-col justify-center items-center" >
         <MyHeading text="Hello ! I'm "/>
         <MyHeading text="RITU "/>
-        <p className="text-white text-lg flex">
+        <div className=' text-2xl md:text-3xl flex font-bold  bg-gradient-to-r from-[#51bad2] to-[#4543d4] text-transparent bg-clip-text'>
        {"<"} <Typewriter options={options} /> {"/>"}
-        </p>
+        </div>
        <TextGenerateEffect
         words={words}
          />

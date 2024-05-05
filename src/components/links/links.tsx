@@ -3,30 +3,27 @@ import { FaLinkedin } from "react-icons/fa";
  import { SiLeetcode } from "react-icons/si";
  import { FaXTwitter } from "react-icons/fa6";
 
- const style = {
-    color : '#B5E3EB' , 
-    fontSize : '35px' , 
- }
+ 
 
 const contactDetails = [
     {
         id :"c1" , 
-        icons : <IoLogoGithub  style={style} /> , 
+        icons : <IoLogoGithub  className="text-[35px] text-[#B5E3EB] hover:text-[#5c8fb8]" /> , 
         link : "https://github.com/Ritu-03Thakur" , 
     } ,
     {
         id :"c2" , 
-        icons : <FaLinkedin style={style}/> , 
+        icons : <FaLinkedin className="text-[35px] text-[#B5E3EB] hover:text-[#5c8fb8]"/> , 
         link : "https://www.linkedin.com/in/ritu03" , 
     } ,
     {
         id :"c3" , 
-        icons : <SiLeetcode style={style}/> , 
+        icons : <SiLeetcode className="text-[35px] text-[#B5E3EB] hover:text-[#5c8fb8]"/> , 
         link : "https://leetcode.com/u/ritu_03thakur/" , 
     } , 
     {
         id :"c4" , 
-        icons : <FaXTwitter style={style}/> , 
+        icons : <FaXTwitter className="text-[35px] text-[#B5E3EB] hover:text-[#5c8fb8]"/> , 
         link : "https://twitter.com/Ritu_03Thakur" , 
     }
 ]
