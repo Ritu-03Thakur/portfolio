@@ -70,7 +70,7 @@ const AboutSummary = () => {
          words={words}
          className="text-xl"
           />
-          <Link href={"RITU-Resume.pdf"}>
+          <Link href={"Ritu-resume.pdf"}>
           <Button text = {"Download CV"} />
           </Link>
             </div>
