@@ -4,10 +4,9 @@ import { motion } from 'framer-motion';
 import { MdOutlineSegment } from "react-icons/md";
 import { AiOutlineClose } from "react-icons/ai"; 
 import Link from "next/link";
- import {  FaSun } from "react-icons/fa";
- import { GiNightSleep } from "react-icons/gi";
 import Sidebar from "./Sidebar";
 import { SubHeading } from "./Common";
+import { Theme } from "./Theme";
 
 const Navbar = () => {
   const [sideNav, setSideNav] = useState(false);
@@ -33,9 +32,7 @@ const Navbar = () => {
       <div className="flex justify-center items-center p-4  md:rounded-lg md:items-baseline gap-2">
         {/* Toogle and links */}
         <div>
-      <button onClick={handleToggle} >
-        {isToggled ? <FaSun size={"20px"} className="text-yellow-300 hover:text-yellow-700"/> : <GiNightSleep size={"20px"} className="text-yellow-300 hover:text-yellow-700"/>}
-      </button>
+      <Theme/>
     </div>
         <div className="md:flex  hidden" >
         <ul className="flex gap-3 list-none justify-center items-center text-xl " >

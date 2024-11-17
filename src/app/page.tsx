@@ -8,7 +8,7 @@ export default function Home() {
   return (
      <>
       <TracingBeam className="px-6 ">
-        <div className="flex flex-col gap-y-52 mt-[5rem]">
+        <div  className="flex flex-col gap-y-52 mt-[5rem] dark:bg-gray-50" >
      <HomeSummary />
      <AboutSummary/>
      <Skills />

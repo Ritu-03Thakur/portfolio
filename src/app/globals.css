@@ -7,6 +7,23 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  background-color: #13181e;
+
+
+
+.light-theme {
+  @apply 
+  bg-[#c3c0c0]
+   text-[#4f5081d6]
+   text-xl
+   font-semibold
+   ;
+}
+
+.dark-theme {
+  @apply 
+  bg-[#13181e]
+   text-[#9399a3]
+   text-xl
+   font-semibold
+   ;
 }
